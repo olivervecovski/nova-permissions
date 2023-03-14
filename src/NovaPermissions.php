@@ -5,6 +5,7 @@ use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 use Eminiarts\NovaPermissions\Nova\Role;
 use Eminiarts\NovaPermissions\Nova\Permission;
+use Illuminate\Http\Request;
 
 class NovaPermissions extends Tool
 {
@@ -76,5 +77,5 @@ class NovaPermissions extends Tool
         return $this;
     }
 
-    public function menu() {}
+    public function menu(Request $request) {}
 }
