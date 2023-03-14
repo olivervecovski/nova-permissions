@@ -75,4 +75,6 @@ class NovaPermissions extends Tool
 
         return $this;
     }
+
+    public function menu() {}
 }
